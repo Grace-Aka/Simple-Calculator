@@ -6,11 +6,12 @@ let operator = prompt ('select an operator, a. Addition, b. Subtraction, c. Divi
 
 //3. Create a function that checks the users selection of operator if the operator is correct proceed else ask the user to input a correct operator and start again
 function checkOperator(){
-    if (operator === 'a' || operator === 'b' || operator === 'c' || operator === 'd' && operator !='d') {
+    if (operator === 'a' || operator === 'b' || operator === 'c' || operator === 'd' && operator !='') {
         performOperation();
     } else {    
-      console.log('Please insert a valid input or operator');
+      console.log('Please insert a valid input or operator!');
     } 
+
     resetOperatorSelection();
   }
 
