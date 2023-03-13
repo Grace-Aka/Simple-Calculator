@@ -28,26 +28,26 @@ function performOperation(){
 
     //  c. Perform the operation selected on the first and second numbers inputed
 
-    if (operator === 'a'){
+  if (operator === 'a'){
       let addition = firstInput + secondInput
       console.log(`The sum is ${addition}`);
       return addition;
-    } else if (operator === 'b'){
+  } else if (operator === 'b'){
       let subtraction = firstInput - secondInput
       console.log(`The Difference is ${subtraction}`);
       return subtraction;
-    } else if (operator === 'c'){
+  } else if (operator === 'c'){
       let division = firstInput / secondInput
       console.log(`The Quotient is ${division}`);
       return division;
-    } else if (operator === 'd'){
+  } else if (operator === 'd'){
       let multiplication = firstInput * secondInput
       console.log(`The product is ${multiplication}`);
       return multiplication;
-    } else {
+  } else {
       console.log('Please insert a vaild number or input!');
-    }
-    performOperation();
+  }
+  performOperation();
     
 }
 
