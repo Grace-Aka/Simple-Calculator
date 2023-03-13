@@ -20,12 +20,36 @@ checkOperator();
 //4. Ask a function to perform a calculation based on the operator selected by the user
 function performOperation(){
 //  a. Ask the user for first number or input
-    let firstInput = prompt('Please insert your first number: ');
+    let firstInput = parseInt(prompt('Please insert your first number: '));
 
     //  b. Ask the user for the second number or input
-    let secondInput = prompt('Please insert your second number: ');
+    let secondInput = parseInt(prompt('Please insert your second number: '));
+
+    //  c. Perform the operation selected on the first and second numbers inputed
+
+    if (operator === 'a'){
+      let addition = firstInput + secondInput
+      console.log(`The sum is ${addition}`);
+      return addition;
+    } else if (operator === 'b'){
+      let subtraction = firstInput - secondInput
+      console.log(`The sum is ${subtraction}`);
+      return subtraction;
+    } else if (operator === 'c'){
+      let division = firstInput / secondInput
+      console.log(`The sum is ${division}`);
+      return division;
+    } else if (operator === 'd'){
+      let multiplication = firstInput * secondInput
+      console.log(`The sum is ${multiplication}`);
+      return multiplication;
+    } else {
+      console.log('Please insert a vaild number or input!');
+    }
+    performOperation();
+    
 }
-//  c. Perform the operation selected on the first and second numbers inputed
+
 //5. Create a function to reset the input of operator selection and restart the process when there is a wrong selection of operator
 function resetOperatorSelection() {
   prompt ('select an operator, a. Addition, b. Subtraction, c. Division, d. Multiplication: ');
