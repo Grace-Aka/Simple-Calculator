@@ -6,14 +6,14 @@ let operator = prompt ('select an operator, a. Addition, b. Subtraction, c. Divi
 
 //3. Create a function that checks the users selection of operator if the operator is correct proceed else ask the user to input a correct operator and start again
 function checkOperator(){
-    if (operator === 'a' || operator === 'b' || operator === 'c' || operator === 'd' && operator !='') {
+    if (operator === 'a' || operator === 'b' || operator === 'c' || operator === 'd' && operator !='d') {
         performOperation();
-    } else {     
-    } {
-      console.log('Please insert a vaild operator!');
-    }
+    } else {    
+      console.log('Please insert a valid input or operator'); 
+    } 
     resetOperatorSelection();
-}
+  }
+
 checkOperator();
 
 
@@ -33,15 +33,15 @@ function performOperation(){
       return addition;
     } else if (operator === 'b'){
       let subtraction = firstInput - secondInput
-      console.log(`The sum is ${subtraction}`);
+      console.log(`The Difference is ${subtraction}`);
       return subtraction;
     } else if (operator === 'c'){
       let division = firstInput / secondInput
-      console.log(`The sum is ${division}`);
+      console.log(`The Quotient is ${division}`);
       return division;
     } else if (operator === 'd'){
       let multiplication = firstInput * secondInput
-      console.log(`The sum is ${multiplication}`);
+      console.log(`The product is ${multiplication}`);
       return multiplication;
     } else {
       console.log('Please insert a vaild number or input!');
