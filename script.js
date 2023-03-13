@@ -9,7 +9,7 @@ function checkOperator(){
     if (operator === 'a' || operator === 'b' || operator === 'c' || operator === 'd' && operator !='d') {
         performOperation();
     } else {    
-      console.log('Please insert a valid input or operator'); 
+      console.log('Please insert a valid input or operator');
     } 
     resetOperatorSelection();
   }
