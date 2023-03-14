@@ -32,7 +32,7 @@ function performOperation(){
       let addition = firstInput + secondInput
       console.log(`The sum is ${addition}`);
       return addition;
-  } else (operator === 'b'){
+  } else if(operator === 'b'){
       let subtraction = firstInput - secondInput
       console.log(`The Difference is ${subtraction}`);
       return subtraction;
@@ -52,6 +52,6 @@ function performOperation(){
 
 //5. Create a function to reset the input of operator selection and restart the process when there is a wrong selection of operator
 function resetOperatorSelection() {
-  prompt ('select an operator, a. Addition, b. Subtraction, c. Division, d. Multiplication: ');
+ operator = prompt('select an operator, a. Addition, b. Subtraction, c. Division, d. Multiplication: ');
   checkOperator();
 }
